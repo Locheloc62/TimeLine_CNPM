@@ -1,0 +1,55 @@
+<nav class="navbar navbar-expand-sm bg-success navbar-light">
+    <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="/">📚 BOOKSTORE</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link text-white px-3 py-2" href="/">Trang chủ</a>
+                </li>
+
+                {% for c in cates %}
+                <li class="nav-item">
+                    <a class="nav-link text-white px-3 py-2" href="/?category_id={{c.id}}">{{c.name}}</a>
+                </li>
+                {% endfor %}
+
+                {% if current_user.is_authenticated %}
+                    <li class="nav-item">
+                        <a class="nav-link d-flex align-items-center gap-2 text-white" href="/login">
+                            <img class="rounded-avatar">
+                            Chào {{current_user.name}}
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-light mx-1" href="/logout"> Đăng xuất</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-light mx-1" href="/login"> Đăng nhập</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-light text-dark mx-1" href="/register"> Đăng ký</a>
+                    </li>
+                {% endif %}
+
+                <li class="nav-item position-relative">
+                    <a class="nav-link btn btn-light text-dark mx-1 " href="/cart">
+                        🛒 Giỏ hàng
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            {{cart_stats.total_quantity}}
+                        </span>
+                    </a>
+                </li>
+            </ul>
+
+            <form class="d-flex" method="get">
+                <input class="form-control me-2" type="text" name="q" placeholder="Nhập từ khóa">
+                <button class="btn btn-primary rounded-pill shadow-sm d-flex align-items-center justify-content-center gap-2 px-3" type="submit">🔍 <span>Tìm </span></button>
+            </form>
+        </div>
+    </div>
+</nav>

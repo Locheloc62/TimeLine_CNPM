@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "name": "Đắc nhân tâm",
+    "price": 200000,
+    "image": "https://tuoitrephuocson.vn/uploads/news/2022_11/dac-nhan-tam.jpg",
+    "cate_id": 1,
+    "author": "Dale Carnegie",
+    "sold": 8,
+    "rating": 4.8
+  },
+  {
+    "id": 2,
+    "name": "Bồ câu không đưa thư",
+    "price": 120000,
+    "image": "https://th.bing.com/th/id/OIP.MIN1POVMx63fBtq2gzNb6wHaM_?rs=1&pid=ImgDetMain",
+    "cate_id": 1,
+    "author": "Nguyễn Nhật Ánh",
+    "sold": 10,
+    "rating": 4.5
+  },
+  {
+    "id": 3,
+    "name": "Cha nghèo cha giàu",
+    "price": 220000,
+    "image": "https://th.bing.com/th/id/R.298d267aaf603c5a2dbe5ad18f5a79c4?rik=etYedv7mlvnqhQ&pid=ImgRaw&r=0",
+    "cate_id": 2,
+    "author": "Robert Kiyosaki",
+    "sold": 5,
+    "rating": 4.7
+  },
+  {
+    "id": 4,
+    "name": "Doreamon",
+    "price": 110000,
+    "image": "https://th.bing.com/th/id/OIP.Seb-SgC3ii9yd9YZIqCWPQHaL2?rs=1&pid=ImgDetMain",
+    "cate_id": 3,
+    "author": "Fujiko F. Fujio",
+    "sold": 0,
+    "rating": 4.9
+  },
+  {
+    "id": 5,
+    "name": "Mắt biếc",
+    "price": 100000,
+    "image": "https://cf.shopee.vn/file/af1713d71fab1b3f93c0bb71767d43c3",
+    "cate_id": 1,
+    "author": "Nguyễn Nhật Ánh",
+    "sold": 0,
+    "rating": 4.6
+  },
+  {
+    "id": 6,
+    "name": "Tôi là Bê tô",
+    "price": 110000,
+    "image": "https://th.bing.com/th/id/R.c22e48d9604bc6aa5446e9e8768ef9e6?rik=xsM%2b7F9a7sGWyA&riu=http%3a%2f%2fisach.info%2fimages%2fstory%2fcover%2ftoi_la_beto__nguyen_nhat_anh.jpg&ehk=2TOCUm8c5EJ8NebP8fWWyo2PeFVWLKWE%2b6uoQSTS1io%3d&risl=&pid=ImgRaw&r=0",
+    "cate_id": 1,
+    "author": "Nguyễn Nhật Ánh",
+    "sold": 0,
+    "rating": 4.4
+  },
+  {
+    "id": 7,
+    "name": "Bán bạc cắt thu bạc tỷ",
+    "price": 150000,
+    "image": "https://th.bing.com/th/id/OIP.SuzDbElDh0Z4UgTEapIQsgHaHa?rs=1&pid=ImgDetMain",
+    "cate_id": 2,
+    "author": "Harv Eker",
+    "sold": 0,
+    "rating": 4.3
+  },
+  {
+    "id": 8,
+    "name": "Conan",
+    "price": 100000,
+    "image": "https://th.bing.com/th/id/R.65aebed85ca17a8f84196d2aca2ba88d?rik=rd0RxXgft2gIVw&riu=http%3a%2f%2fproduct.hstatic.net%2f1000376556%2fproduct%2ftham_tu_lung_danh_conan_-_tap_100_-_ban_thuong_0e373a3319b543ab9ac1857c94ce7fec_grande.jpg&ehk=08WFMgtic3imVRrCFeBPX%2bNRauNxUQb6TXuQtBC%2bjmE%3d&risl=&pid=ImgRaw&r=0",
+    "cate_id": 3,
+    "author": "Gosho Aoyama",
+    "sold": 1,
+    "rating": 4.9
+  },
+  {
+    "id": 9,
+    "name": "Trạng Quỳnh",
+    "price": 90000,
+    "image": "https://th.bing.com/th/id/OIP.B__QhQvqY848M37GfMtqygHaLv?rs=1&pid=ImgDetMain",
+    "cate_id": 3,
+    "author": "Sưu tầm dân gian",
+    "sold": 7,
+    "rating": 4.2
+  },
+  {
+    "id": 10,
+    "name": "Naruto",
+    "price": 90000,
+    "image": "https://th.bing.com/th/id/OIP.73DHzlWJ9FysPCPhFZyK7wHaHa?rs=1&pid=ImgDetMain",
+    "cate_id": 3,
+    "author": "Masashi Kishimoto",
+    "sold": 100,
+    "rating": 4.9
+  },
+  {
+    "id": 11,
+    "name": "Think and grow rich",
+    "price": 200000,
+    "image": "https://th.bing.com/th/id/OIP.oBDSpOmvVztwYgS9piFkPQHaHa?rs=1&pid=ImgDetMain",
+    "cate_id": 2,
+    "author": "Napoleon Hill",
+    "sold": 50,
+    "rating": 4.8
+  },
+  {
+    "id": 12,
+    "name": "Sổ tay kinh doanh",
+    "price": 210000,
+    "image": "https://i.pinimg.com/736x/d8/78/6d/d8786d3edfdcce73de440dd2bebc4dfb.jpg",
+    "cate_id": 2,
+    "author": "Khởi nghiệp Việt",
+    "sold": 100,
+    "rating": 4.1
+  }
+]

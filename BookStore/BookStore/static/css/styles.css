@@ -1,0 +1,13 @@
+*{
+    font-family: tahoma
+}
+
+body{
+    background-color: #fff3b0;
+}
+input[type="month"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+}

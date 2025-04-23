@@ -1,0 +1,179 @@
+{% extends 'admin/master.html' %}
+
+{% block body %}
+<div class="container mt-4">
+  <h1 class="text-info mb-4">THỐNG KÊ SẢN PHẨM</h1>
+
+  <div class="mb-3">
+    <!-- Nút thống kê theo tháng cho doanh thu -->
+    <button class="btn btn-primary me-2" onclick="loadChartByMonth('revenue')">Thống kê theo tháng (Doanh thu)</button>
+
+    <!-- Nút thống kê theo tháng cho tần suất bán hàng -->
+    <button class="btn btn-success" onclick="loadChartByMonth('frequency')">Thống kê theo tháng (Tần suất bán)</button>
+
+    <!-- Thêm ô chọn tháng -->
+    <label for="monthSelector" class="btn btn-warning">Chọn tháng:</label>
+    <input type="month" id="monthSelector" class="form-control" style="width: 200px; display: inline-block;" onchange="loadChartByMonthFromSelector()">
+  </div>
+
+  <canvas id="productChart" height="100"></canvas>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  let chart;
+
+  // Hàm để tải thống kê theo tháng khi chọn tháng
+  function loadChartByMonth(type) {
+    const selectedMonth = document.getElementById('monthSelector').value;  // Lấy giá trị tháng từ ô chọn tháng
+
+    if (!selectedMonth) {
+      alert('Vui lòng chọn tháng!');
+      return;
+    }
+
+    // Fetch dữ liệu thống kê từ API hoặc từ nguồn dữ liệu cố định
+    fetch(`/api/statistics?type=monthly&month=${selectedMonth}&statType=${type}`)
+      .then(response => response.json())
+      .then(data => {
+        const ctx = document.getElementById('productChart').getContext('2d');
+
+        // Hủy bỏ biểu đồ cũ nếu có
+        if (chart) chart.destroy();
+
+        // Tạo biểu đồ mới
+        chart = new Chart(ctx, {
+          type: 'bar',  // Kiểu biểu đồ là thanh
+          data: {
+            labels: data.labels,  // Tháng sẽ là nhãn của biểu đồ
+            datasets: [{
+              label: type === 'revenue' ? 'Doanh thu theo tháng' : 'Tần suất bán hàng theo tháng',
+              data: data.values,  // Dữ liệu về doanh thu hoặc tần suất
+              backgroundColor: type === 'revenue' ? 'rgba(54, 162, 235, 0.7)' : 'rgba(75, 192, 192, 0.7)',  // Màu cho doanh thu hoặc tần suất
+              borderColor: type === 'revenue' ? 'rgba(54, 162, 235, 1)' : 'rgba(75, 192, 192, 1)',  // Màu biên
+              borderWidth: 1
+            }]
+          },
+          options: {
+            scales: {
+              y: {
+                beginAtZero: true  // Bắt đầu trục y từ 0
+              }
+            },
+            responsive: true,  // Tự động điều chỉnh kích thước
+            plugins: {
+              legend: {
+                display: true  // Hiển thị danh sách chú giải
+              },
+              title: {
+                display: true,
+                text: type === 'revenue' ? 'Thống kê doanh thu theo tháng' : 'Thống kê tần suất bán theo tháng'
+              }
+            }
+          }
+        });
+      });
+  }
+
+  // Hàm gọi khi ô chọn tháng thay đổi
+  function loadChartByMonthFromSelector() {
+    const selectedMonth = document.getElementById('monthSelector').value;
+    if (selectedMonth) {
+      loadChartByMonth('frequency');  // Hoặc 'revenue', tùy vào yêu cầu
+    }
+  }
+
+  // Dữ liệu sản phẩm
+ // Giả lập dữ liệu bán hàng theo tháng
+const salesData = [
+  { "id": 1, "name": "Đắc nhân tâm", "price": 200000, "sold": 2, "month": "2025-04", "category": "Motivation" },
+  { "id": 2, "name": "Bồ câu không đưa thư", "price": 120000, "sold": 8, "month": "2025-04", "category": "Novel" },
+  { "id": 3, "name": "Cha nghèo cha giàu", "price": 220000, "sold": 0, "month": "2025-04", "category": "Finance" },
+  { "id": 4, "name": "Doreamon", "price": 110000, "sold": 0, "month": "2025-04", "category": "Manga" },
+  { "id": 5, "name": "Mắt biếc", "price": 100000, "sold": 0, "month": "2025-04", "category": "Novel" },
+  { "id": 6, "name": "Tôi là Bê tô", "price": 110000, "sold": 0, "month": "2025-04", "category": "Novel" },
+  { "id": 7, "name": "Bán bạc cắt thu bạc tỷ", "price": 150000, "sold": 0, "month": "2025-04", "category": "Finance" },
+  { "id": 8, "name": "Conan", "price": 100000, "sold": 1, "month": "2025-04", "category": "Manga" },
+  { "id": 9, "name": "Trạng Quỳnh", "price": 90000, "sold": 7, "month": "2025-04", "category": "Folk" },
+  { "id": 10, "name": "Naruto", "price": 90000, "sold": 100, "month": "2025-04", "category": "Manga" },
+  { "id": 11, "name": "Think and grow rich", "price": 200000, "sold": 50, "month": "2025-04", "category": "Finance" },
+  { "id": 12, "name": "Sổ tay kinh doanh", "price": 210000, "sold": 100, "month": "2025-04", "category": "Business" }
+];
+
+// Hàm tính toán doanh thu và tần suất bán hàng
+function calculateSalesForMonth(month, type) {
+  const filteredData = salesData.filter(item => item.month === month);
+
+  // Tính doanh thu cho mỗi sản phẩm
+  const revenue = filteredData.map(item => item.price * item.sold);
+  const frequency = filteredData.map(item => item.sold);
+
+  const totalRevenue = revenue.reduce((sum, value) => sum + value, 0);
+  const totalFrequency = frequency.reduce((sum, value) => sum + value, 0);
+
+  const labels = filteredData.map(item => item.name); // Tên sản phẩm làm nhãn
+  const values = type === 'revenue' ? revenue : frequency; // Lấy doanh thu hoặc tần suất
+
+  return {
+    labels,
+    values,
+    totalRevenue,
+    totalFrequency
+  };
+}
+
+// Hàm cập nhật biểu đồ theo tháng
+function loadChartByMonth(type) {
+  const selectedMonth = document.getElementById('monthSelector').value;
+
+  if (!selectedMonth) {
+    alert('Vui lòng chọn tháng!');
+    return;
+  }
+
+  // Tính doanh thu hoặc tần suất cho tháng đã chọn
+  const salesStats = calculateSalesForMonth(selectedMonth, type);
+
+  const ctx = document.getElementById('productChart').getContext('2d');
+
+  // Hủy bỏ biểu đồ cũ nếu có
+  if (chart) chart.destroy();
+
+  // Tạo biểu đồ mới
+  chart = new Chart(ctx, {
+    type: 'bar',  // Kiểu biểu đồ là thanh
+    data: {
+      labels: salesStats.labels,  // Tháng sẽ là nhãn của biểu đồ
+      datasets: [{
+        label: type === 'revenue' ? 'Doanh thu theo tháng' : 'Tần suất bán hàng theo tháng',
+        data: salesStats.values,  // Dữ liệu về doanh thu hoặc tần suất
+        backgroundColor: type === 'revenue' ? 'rgba(54, 162, 235, 0.7)' : 'rgba(75, 192, 192, 0.7)',  // Màu cho doanh thu hoặc tần suất
+        borderColor: type === 'revenue' ? 'rgba(54, 162, 235, 1)' : 'rgba(75, 192, 192, 1)',  // Màu biên
+        borderWidth: 1
+      }]
+    },
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true  // Bắt đầu trục y từ 0
+        }
+      },
+      responsive: true,  // Tự động điều chỉnh kích thước
+      plugins: {
+        legend: {
+          display: true  // Hiển thị danh sách chú giải
+        },
+        title: {
+          display: true,
+          text: type === 'revenue' ? 'Thống kê doanh thu theo tháng' : 'Thống kê tần suất bán theo tháng'
+        }
+      }
+    }
+  });
+}
+
+  // Hiển thị sản phẩm khi tải trang
+  displayProducts(products);
+</script>
+{% endblock %}

@@ -1,6 +1,6 @@
 <mxfile host="Electron" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36" version="26.2.2">
   <diagram id="C5RBs43oDa-KdzZeNtuy" name="Page-1">
-    <mxGraphModel dx="-727" dy="607" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="-48" dy="963" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-0" />
         <mxCell id="WIyWlLk6GJQsqaUBKTNV-1" parent="WIyWlLk6GJQsqaUBKTNV-0" />
@@ -19,16 +19,16 @@
         <mxCell id="xS5LXx1YeY_dAVBqfywL-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NguoiDung&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_User: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenDangNhap:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- matKhau:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- Role: str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- hoten: str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-email: str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- diaChi: str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;-soDienThoai: str&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ dangNhap (tenDangNhap: str, matKhau: str): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ dangXuat(): None&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ xemTrangChu(): list[Sach]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ timKiemSach(tuKhoa: str): List&amp;lt;Sach&amp;gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ xemChiTietSach(): Sach&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1750" y="78" width="200" height="232" as="geometry" />
         </mxCell>
-        <mxCell id="xS5LXx1YeY_dAVBqfywL-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;KhachHang&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- id_KhachHang: int&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ dangKy(thongTin: dict[str, str]): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ datSach(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;pttt: str,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;sach: list[SachDonHang]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): DonHang&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ thanhToanZaloPay(donHang: DonHang): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ thanhToanKhiNhan(donHang: DonHang): bool&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="xS5LXx1YeY_dAVBqfywL-2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;KhachHang&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;id_KhachHang: int&lt;/span&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ dangKy(thongTin: dict[str, str]): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ datSach(&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;pttt: str,&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;sach: list[SachDonHang]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): DonHang&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ thanhToanZaloPay(donHang: DonHang): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ thanhToanKhiNhan(donHang: DonHang): bool&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2050" y="118" width="200" height="282" as="geometry" />
         </mxCell>
-        <mxCell id="xS5LXx1YeY_dAVBqfywL-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sach&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_Sach: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenSach: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tacGia: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- theLoai: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- giaBan: float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- soLuongTon: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- luotBan: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ capNhatThongTin(thongTin:&amp;nbsp; &amp;nbsp;dict[str, str]): None&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ tangSoLuong(soLuong: int): None&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ giamSoLuong(soLuong: int): None&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ layThongTin(): str&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ layGia(): float&lt;/span&gt;&lt;ul data-end=&quot;1750&quot; data-start=&quot;1565&quot;&gt;&lt;br&gt;&lt;/ul&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2370" y="510" width="200" height="230" as="geometry" />
+        <mxCell id="xS5LXx1YeY_dAVBqfywL-9" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Sach&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_Sach: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenSach: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tacGia: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- theLoai: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- giaBan: float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- soLuongTon: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ capNhatThongTin(thongTin:&amp;nbsp; &amp;nbsp;dict[str, str]): None&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ tangSoLuong(soLuong: int): None&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ giamSoLuong(soLuong: int): None&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ layThongTin(): str&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&amp;nbsp;+ layGia(): float&lt;/span&gt;&lt;ul data-end=&quot;1750&quot; data-start=&quot;1565&quot;&gt;&lt;br&gt;&lt;/ul&gt;&lt;/div&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="2370" y="520" width="200" height="220" as="geometry" />
         </mxCell>
         <mxCell id="xS5LXx1YeY_dAVBqfywL-10" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;DonHang&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_DonHang: int&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ngayDat: date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- trangThai:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- phuongThucThanhToan:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenKhachHang:&amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;str&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- dsSachDonHang: list[SachDonHang]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ tinhTongTien(): float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ layDSSach(): list[SachDonHang]&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ layPhuongThucThanhToan(): str&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2050" y="470.5" width="200" height="191" as="geometry" />
         </mxCell>
-        <mxCell id="xS5LXx1YeY_dAVBqfywL-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NhanVienBanHang&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- idNhanVien: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ngayVaoLam: date&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ taoDonHang(sach: list[SachDonHang]): DonHang&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ traCuuDonDat(): DonHang&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ xuatHoaDon(): bool&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="xS5LXx1YeY_dAVBqfywL-11" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;NhanVienBanHang&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;-idNhanVien: int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ taoDonHang(sach: list[SachDonHang]): DonHang&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ traCuuDonDat(): DonHang&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ xuatHoaDon(): bool&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1750" y="369" width="200" height="181" as="geometry" />
         </mxCell>
         <mxCell id="xS5LXx1YeY_dAVBqfywL-14" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=0;endSize=16;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.505;exitY=0.011;exitDx=0;exitDy=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xS5LXx1YeY_dAVBqfywL-11" target="xS5LXx1YeY_dAVBqfywL-0" edge="1">
@@ -40,13 +40,13 @@
         <mxCell id="xS5LXx1YeY_dAVBqfywL-16" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;PhieuNhapSach&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;- ngayNhap: date&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- dsSach: list[ChiTietPhieuNhap]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ capNhat(thongTin: dict[str, str]): bool&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2370" y="299" width="200" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="4vgag1LEd354TFs-YVUa-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;QuanLyKho&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_Quanlykho int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- khuVucPhuTrach: str&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nhapSacḥ(phieuNhap: PhieuNhapSach): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ chinhSuaPhieuNhap(thongTin: dict[str, str]): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="4vgag1LEd354TFs-YVUa-0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;QuanLyKho&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_Quanlykho int&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ nhapSacḥ(phieuNhap: PhieuNhapSach): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ chinhSuaPhieuNhap(thongTin: dict[str, str]): bool&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;&lt;br&gt;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2370" y="118" width="200" height="132" as="geometry" />
         </mxCell>
         <mxCell id="4vgag1LEd354TFs-YVUa-1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;HoaDon&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_HoaDon: int&lt;br&gt;&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- ngayLap: Date&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tongTien: float&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- donHang: DonHang&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenNhanVienBanHang: String&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ xuatHoaDon(): None&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1750" y="620" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="4vgag1LEd354TFs-YVUa-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;QuanLy&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_quanLy: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- dsSach: list&amp;lt;Sach&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;xemBaoCaoDoanhThu(thang: int, nam: int): ThongKeDoanhThu&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ xemBaoCaoTanSuatBan&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(thang: int, nam: int):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ThongKe&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TanSuatBan&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ themSach(sach: Sach): bool&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ suaThongTinSach(thongTin: &lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;dict[str, str]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): None&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ xoaSachGioHang(): None&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ thayDoiQuyDinh(): None&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="4vgag1LEd354TFs-YVUa-5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;QuanLy&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;id_quanLy: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;hoTen: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;email: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;soDienThoai: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ dsSach: list&amp;lt;Sach&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+&amp;nbsp;xemBaoCaoDoanhThu(thang: int, nam: int): ThongKeDoanhThu&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ xemBaoCaoTanSuatBan&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;(thang: int, nam: int):&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ThongKe&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;TanSuatBan&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ themSach(sach: Sach): bool&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ suaThongTinSach(thongTin: &lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;dict[str, str]&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;): None&lt;/span&gt;&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ xoaSachGioHang(): None&lt;/p&gt;&lt;p style=&quot;margin: 0px 0px 0px 4px;&quot;&gt;+ thayDoiQuyDinh(): None&amp;nbsp;&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2050" y="880" width="200" height="250" as="geometry" />
         </mxCell>
         <mxCell id="4vgag1LEd354TFs-YVUa-6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;ThongKe&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- id_ThongKe: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- tenThongKe: String&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- thang: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- nam: int&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- loaiThongKe: str&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;- dsChiTiet: list[ChiTietThongKe]&lt;/p&gt;&lt;hr size=&quot;1&quot; style=&quot;border-style:solid;&quot;&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ hienThiBang(): None&lt;/p&gt;&lt;p style=&quot;margin:0px;margin-left:4px;&quot;&gt;+ hienThiBieuDo(): None&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;html=1;whiteSpace=wrap;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -123,6 +123,12 @@
             <Array as="points" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-8" value="" style="endArrow=diamondThin;endFill=1;endSize=24;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xS5LXx1YeY_dAVBqfywL-9" target="xS5LXx1YeY_dAVBqfywL-16" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2790" y="538" as="sourcePoint" />
+            <mxPoint x="2800" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-11" value="" style="endArrow=none;endFill=1;endSize=24;html=1;rounded=0;exitX=0.772;exitY=0.997;exitDx=0;exitDy=0;entryX=0.566;entryY=0.008;entryDx=0;entryDy=0;startFill=0;entryPerimeter=0;exitPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xS5LXx1YeY_dAVBqfywL-9" target="4vgag1LEd354TFs-YVUa-6" edge="1">
           <mxGeometry width="160" relative="1" as="geometry">
             <mxPoint x="2690" y="822.0000000000002" as="sourcePoint" />
@@ -144,6 +150,17 @@
             <mxPoint x="2360" y="530" as="targetPoint" />
           </mxGeometry>
         </mxCell>
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-27" value="" style="endArrow=diamondThin;endFill=0;endSize=24;html=1;rounded=0;entryX=0.993;entryY=0.205;entryDx=0;entryDy=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="xS5LXx1YeY_dAVBqfywL-9" target="4vgag1LEd354TFs-YVUa-5" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2260" y="750" as="sourcePoint" />
+            <mxPoint x="2420" y="750" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="2420" y="810" />
+              <mxPoint x="2330" y="810" />
+              <mxPoint x="2330" y="930" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-28" value="" style="shape=mxgraph.arrows2.wedgeArrow;html=1;bendable=0;startWidth=9;fillColor=strokeColor;defaultFillColor=invert;defaultGradientColor=invert;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="2329.68" y="842" as="sourcePoint" />
@@ -153,10 +170,10 @@
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-29" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;quản lý&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2340" y="820" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mr91Y3QKC5oN6nfLGOrs-30" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-30" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;0..1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2240" y="900" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mr91Y3QKC5oN6nfLGOrs-31" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-31" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;0..*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2370" y="750" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-36" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -184,7 +201,7 @@
           <mxGeometry x="2230" y="970" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-56" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2360" y="970" width="60" height="30" as="geometry" />
+          <mxGeometry x="2350" y="980" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-57" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.005;entryY=0.323;entryDx=0;entryDy=0;entryPerimeter=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mr91Y3QKC5oN6nfLGOrs-40" target="4vgag1LEd354TFs-YVUa-5" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -195,8 +212,8 @@
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-58" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2010" y="960" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mr91Y3QKC5oN6nfLGOrs-59" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;*&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2330" y="625" width="60" height="30" as="geometry" />
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-59" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1..*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="2320" y="631.5" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-69" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mr91Y3QKC5oN6nfLGOrs-40" target="xS5LXx1YeY_dAVBqfywL-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -210,7 +227,7 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="mr91Y3QKC5oN6nfLGOrs-70" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;1&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-70" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1925" y="880" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-72" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;quản lý&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
@@ -244,7 +261,7 @@
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-79" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1..*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2000" y="650" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="mr91Y3QKC5oN6nfLGOrs-82" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;*&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-82" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1920" y="920" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-83" value="" style="endArrow=none;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mr91Y3QKC5oN6nfLGOrs-40" target="xS5LXx1YeY_dAVBqfywL-16" edge="1">
@@ -259,11 +276,11 @@
             </Array>
           </mxGeometry>
         </mxCell>
-        <mxCell id="mr91Y3QKC5oN6nfLGOrs-84" value="&lt;span style=&quot;font-size: 15px;&quot;&gt;*&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+        <mxCell id="mr91Y3QKC5oN6nfLGOrs-84" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1830" y="1040" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-87" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="1930" y="444.5" width="60" height="30" as="geometry" />
+          <mxGeometry x="1930" y="429" width="60" height="30" as="geometry" />
         </mxCell>
         <mxCell id="mr91Y3QKC5oN6nfLGOrs-88" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;0..*&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2020" y="440.5" width="60" height="30" as="geometry" />
@@ -286,6 +303,15 @@
         <mxCell id="MtzjF5CbhGEcuMQgSY7J-14" value="1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2465" y="250" width="30" height="30" as="geometry" />
         </mxCell>
+        <mxCell id="MtzjF5CbhGEcuMQgSY7J-17" value="" style="shape=mxgraph.arrows2.wedgeArrow;html=1;bendable=0;startWidth=9;fillColor=strokeColor;defaultFillColor=invert;defaultGradientColor=invert;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
+          <mxGeometry width="100" height="100" relative="1" as="geometry">
+            <mxPoint x="2319.95" y="974.83" as="sourcePoint" />
+            <mxPoint x="2330.0026315789473" y="974.83" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtzjF5CbhGEcuMQgSY7J-18" value="Lập" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="2300" y="980" width="40" height="30" as="geometry" />
+        </mxCell>
         <mxCell id="MtzjF5CbhGEcuMQgSY7J-20" value="" style="shape=mxgraph.arrows2.wedgeArrow;html=1;bendable=0;startWidth=9;fillColor=strokeColor;defaultFillColor=invert;defaultGradientColor=invert;rounded=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" edge="1">
           <mxGeometry width="100" height="100" relative="1" as="geometry">
             <mxPoint x="2150" y="430" as="sourcePoint" />
@@ -304,8 +330,20 @@
         <mxCell id="MtzjF5CbhGEcuMQgSY7J-25" value="Lập" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="1985" y="429" width="40" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="1KMrVpNDiSou89D11Mfo-4" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
-          <mxGeometry x="2570" y="339" width="30" height="30" as="geometry" />
+        <mxCell id="MtzjF5CbhGEcuMQgSY7J-28" value="" style="endArrow=none;endFill=1;endSize=12;html=1;rounded=0;entryX=0.005;entryY=0.183;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryPerimeter=0;edgeStyle=orthogonalEdgeStyle;startFill=0;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4vgag1LEd354TFs-YVUa-1" target="4vgag1LEd354TFs-YVUa-6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="2170" y="660" as="sourcePoint" />
+            <mxPoint x="2330" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MtzjF5CbhGEcuMQgSY7J-29" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="1845" y="820" width="30" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="MtzjF5CbhGEcuMQgSY7J-30" value="1..2" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="2370" y="870" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="1KMrVpNDiSou89D11Mfo-4" value="1..*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
+          <mxGeometry x="2570" y="328" width="40" height="30" as="geometry" />
         </mxCell>
         <mxCell id="1KMrVpNDiSou89D11Mfo-5" value="" style="endArrow=none;html=1;rounded=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;exitX=0.999;exitY=0.35;exitDx=0;exitDy=0;exitPerimeter=0;edgeStyle=orthogonalEdgeStyle;" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4vgag1LEd354TFs-YVUa-1" target="xS5LXx1YeY_dAVBqfywL-9" edge="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -323,23 +361,6 @@
         </mxCell>
         <mxCell id="1KMrVpNDiSou89D11Mfo-7" value="*" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="WIyWlLk6GJQsqaUBKTNV-1" vertex="1">
           <mxGeometry x="2425" y="488" width="30" height="30" as="geometry" />
-        </mxCell>
-        <mxCell id="6KX9mKpslg99BhEyLAV9-0" value="" style="endArrow=none;html=1;rounded=0;exitX=0.25;exitY=1;exitDx=0;exitDy=0;entryX=0.25;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="mr91Y3QKC5oN6nfLGOrs-24" target="mr91Y3QKC5oN6nfLGOrs-48">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2180" y="290" as="sourcePoint" />
-            <mxPoint x="2230" y="240" as="targetPoint" />
-          </mxGeometry>
-        </mxCell>
-        <mxCell id="6KX9mKpslg99BhEyLAV9-2" value="" style="endArrow=none;html=1;rounded=0;exitX=1;exitY=0.219;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="WIyWlLk6GJQsqaUBKTNV-1" source="4vgag1LEd354TFs-YVUa-5" target="xS5LXx1YeY_dAVBqfywL-9">
-          <mxGeometry width="50" height="50" relative="1" as="geometry">
-            <mxPoint x="2220" y="850" as="sourcePoint" />
-            <mxPoint x="2270" y="800" as="targetPoint" />
-            <Array as="points">
-              <mxPoint x="2330" y="935" />
-              <mxPoint x="2330" y="770" />
-              <mxPoint x="2420" y="770" />
-            </Array>
-          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
